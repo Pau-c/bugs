@@ -61,7 +61,7 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Additional context
-      description: Add any other context about the problem here.
+      label: Agregar detalles adicionales
+      description: Agregar detalles adicionales del contexto/env que crea necesario.
     validations:
       required: false

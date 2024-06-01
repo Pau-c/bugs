@@ -22,7 +22,6 @@ body:
         1. id:
         2. pass:
         3. token:
-  
     validations:
       required: false
   - type: textarea
@@ -54,7 +53,7 @@ body:
       description: Indicar en que dispositivo se verifico la presencia de la falla.
       value: |
         - Dispositivo: [e.g. iPhone 6, Laptop, ]
-        - OS: [ iOS 14, Windows 10, Ubuntu 20.0, Android 12.0]
+        - OS: [iOS 14, Windows 10, Ubuntu 20.0, Android 12.0]
         - Browser: [Chrome, Safari, Firefox]
         - Version: [22]
     validations:
@@ -65,22 +64,22 @@ body:
       description: Agregar detalles adicionales del contexto/env que crea necesario.
     validations:
       required: false
-- type: dropdown
-   attributes:
-    label: Prioridad
-    options:
-      - Alta
-      - Media
-      - Baja
-      validations:
-    required: true
-    - type: dropdown
-   attributes:
-    label: Criticidad
-    options:
-      - Critica
-      - Alta
-      - Media
-      - Baja
-      validations:
-    required: true
+  - type: dropdown
+    attributes:
+      label: Prioridad
+      options:
+        - Alta
+        - Media
+        - Baja
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Criticidad
+      options:
+        - Critica
+        - Alta
+        - Media
+        - Baja
+    validations:
+      required: true

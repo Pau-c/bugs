@@ -65,3 +65,22 @@ body:
       description: Agregar detalles adicionales del contexto/env que crea necesario.
     validations:
       required: false
+- type: dropdown
+   attributes:
+    label: Prioridad
+    options:
+      - Alta
+      - Media
+      - Baja
+      validations:
+    required: true
+    - type: dropdown
+   attributes:
+    label: Criticidad
+    options:
+      - Critica
+      - Alta
+      - Media
+      - Baja
+      validations:
+    required: true
